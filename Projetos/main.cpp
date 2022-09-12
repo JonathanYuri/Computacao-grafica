@@ -7,8 +7,6 @@
 
 using namespace std;
 
-GLsizei winWidth = 500, winHeight = 400;
-
 vector<float> positions_q = {80.0f, 80.0f, 80.0f, 80.0f, 80.0f, 80.0f};
 
 vector<int> going_up = {1, 0, 0, 0, 0, 0};
@@ -48,7 +46,7 @@ void displayFcn(void) {
         glEnd();
     }
 
-    /* Não esperar! */
+    /* Nï¿½o esperar! */
     glFlush();
 }
 
@@ -90,16 +88,6 @@ void timer(int x)
     }
 }
 
-void winReshapeFcn(GLint newWidth, GLint newHeight) {
-
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity(); //atualiza os objetos da janela
-    glOrtho(0.0, GLdouble(newWidth), 0.0, GLdouble(newHeight), -1.0, 1.0);
-
-    winWidth = newWidth;
-    winHeight = newHeight;
-}
-
 int main(int argc, char** argv) {
 
     glutInit(&argc, argv);
@@ -112,7 +100,6 @@ int main(int argc, char** argv) {
     init();
 
     glutDisplayFunc(displayFcn);
-    glutReshapeFunc(winReshapeFcn);
     glutTimerFunc(0, timer, 1);
 
     glutMainLoop();
