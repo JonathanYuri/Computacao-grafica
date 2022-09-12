@@ -7,9 +7,9 @@
 
 using namespace std;
 
-vector<float> positions_q = {80.0f, 80.0f, 80.0f, 80.0f, 80.0f, 80.0f};
+vector<float> positions_q = { 80.0f, 80.0f, 80.0f, 80.0f, 80.0f, 80.0f };
 
-vector<int> going_up = {1, 0, 0, 0, 0, 0};
+vector<int> going_up = { 1, 0, 0, 0, 0, 0 };
 
 float square_size = 62.0f;
 
@@ -50,12 +50,12 @@ void displayFcn(void) {
     glFlush();
 }
 
-void timer(int x)
+void timer(int)
 {
     glutPostRedisplay();
 
     // 60 vezes por segundo (1000 milisegundos)
-    glutTimerFunc(1000 / 60, timer, x);
+    glutTimerFunc(1000 / 60, timer, 0);
 
     for (int i = 0; i < going_up.size(); i++)
     {
@@ -100,7 +100,7 @@ int main(int argc, char** argv) {
     init();
 
     glutDisplayFunc(displayFcn);
-    glutTimerFunc(0, timer, 1);
+    glutTimerFunc(0, timer, 0);
 
     glutMainLoop();
 
@@ -108,4 +108,3 @@ int main(int argc, char** argv) {
     return 0;
 
 }
-
