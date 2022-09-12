@@ -39,7 +39,7 @@ void displayFcn(void) {
         if (i == 5) glColor3f(1.0, 1.0, 1.0);
 
         float x = 80.0f * (i + 1);
-        glTranslatef(100.0, .0, .0);
+        //glTranslatef(0.1, .0, .0);
         glBegin(GL_POLYGON);
         glVertex3f(x - square_size, positions_q[i], -1.0f);
         glVertex3f(x - square_size, positions_q[i] - square_size, -1.0f);
