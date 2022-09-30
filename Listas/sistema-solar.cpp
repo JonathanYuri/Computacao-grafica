@@ -71,8 +71,8 @@ double period_to_angle(int max) {
     // return interp(year % max, [0, max], [0, 360])
     //                    x     ,  xp    ,    fp
 
-    double a[1] = { (int)year % max };
-    double b[2] = { 0, max };
+    double a[1] = { double((int)year % max) };
+    double b[2] = { 0, max*1.0 };
     double c[2] = { 0, 360 };
 
     double *r = interp(1, 2, a, b, c, 0, 0);
