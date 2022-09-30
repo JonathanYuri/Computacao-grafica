@@ -1,9 +1,6 @@
-#include <Windows.h>
-#include <GL\glew.h>
-#include <GL\freeglut.h>
 #include <iostream>
 #include <vector>
-//LINUX #include <GL/glut.h>
+#include <GL/glut.h>
 
 using namespace std;
 

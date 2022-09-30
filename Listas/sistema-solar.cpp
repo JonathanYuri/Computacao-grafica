@@ -1,9 +1,6 @@
-#include <Windows.h>
-#include <GL\glew.h>
-#include <GL\freeglut.h>
 #include <iostream>
 #include <vector>
-//LINUX #include <GL/glut.h>
+#include <GL/glut.h>
 
 using namespace std;
 
@@ -80,29 +77,6 @@ double period_to_angle(int max) {
 
     double *r = interp(1, 2, a, b, c, 0, 0);
     return r[0];
-}
-
-void drawSquare(float x, float y)
-{
-    glBegin(GL_POLYGON);
-    glVertex3f(x - square_size, y, -1.0f);
-    glVertex3f(x - square_size, y - square_size, -1.0f);
-    glVertex3f(x, y - square_size, -1.0f);
-    glVertex3f(x, y, -1.0f);
-    glEnd();
-}
-
-void drawSquare2(float x, float y)
-{
-    //glPushMatrix();
-    //glTranslatef(.0, 1, .0);
-    glBegin(GL_POLYGON);
-    glVertex3f(x - square_size, y, -1.0f);
-    glVertex3f(x - square_size, y - square_size, -1.0f);
-    glVertex3f(x, y - square_size, -1.0f);
-    glVertex3f(x, y, -1.0f);
-    glEnd();
-    //glPopMatrix();
 }
 
 void draw_mars(){
@@ -235,5 +209,4 @@ int main(int argc, char** argv) {
     glutMainLoop();
 
     return 0;
-
 }

@@ -1,9 +1,5 @@
-#include <Windows.h>
-#include <GL\glew.h>
-#include <GL\freeglut.h>
 #include <iostream>
-//LINUX #include <GL/glut.h>
-
+#include <GL/glut.h>
 
 using namespace std;
 
@@ -35,7 +31,7 @@ void displayFcn(void) {
     glVertex3f(251.0f, 250.0f, -1.0f);
     glEnd();
 
-    /* Desenhar um polígono branco  */
+    /* Desenhar um polï¿½gono branco  */
     glColor3f(cores[corAtual[0]][0], cores[corAtual[0]][1], cores[corAtual[0]][2]);
     glBegin(GL_TRIANGLES);
     glVertex2f(250.0f, 250.0f);
@@ -43,7 +39,7 @@ void displayFcn(void) {
     glVertex2f(270.0f, 200.0f);
     glEnd();
 
-    /* Desenhar um polígono vermelho */
+    /* Desenhar um polï¿½gono vermelho */
     glColor3f(cores[corAtual[1]][0], cores[corAtual[1]][1], cores[corAtual[1]][2]);
     glBegin(GL_TRIANGLES);
     glVertex2f(250.0f, 250.0f);
@@ -51,7 +47,7 @@ void displayFcn(void) {
     glVertex2f(300.0f, 270.0f);
     glEnd();
 
-    /* Desenhar um polígono verde */
+    /* Desenhar um polï¿½gono verde */
     glColor3f(cores[corAtual[2]][0], cores[corAtual[2]][1], cores[corAtual[2]][2]);
     glBegin(GL_TRIANGLES);
     glVertex2f(250.0f, 250.0f);
@@ -59,7 +55,7 @@ void displayFcn(void) {
     glVertex2f(270.0f, 300.0f);
     glEnd();
 
-    /* Desenhar um polígono vermelho */
+    /* Desenhar um polï¿½gono vermelho */
     glColor3f(cores[corAtual[3]][0], cores[corAtual[3]][1], cores[corAtual[3]][2]);
     glBegin(GL_TRIANGLES);
     glVertex2f(250.0f, 250.0f);
@@ -68,7 +64,7 @@ void displayFcn(void) {
     glEnd();
 
 
-    /* Não esperar! */
+    /* Nï¿½o esperar! */
     glFlush();
 }
 
