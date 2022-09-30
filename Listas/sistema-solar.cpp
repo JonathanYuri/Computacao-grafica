@@ -176,7 +176,7 @@ void keyboard_handler(unsigned char key, int x, int y)
     if (key == 'y') {// pause / start the application if the Y - key is pressed
         cout << "Y-key was pressed" << endl;
         is_paused = !is_paused;
-        cout << "redisplay2" << endl;
+        //cout << "redisplay2" << endl;
         glutPostRedisplay();
     }
 }
@@ -186,7 +186,7 @@ void timer(int)
     if (!is_paused)
     {
         year += VIRTUAL_TIME;
-        cout << "redisplay " << year << endl;
+        //cout << "redisplay " << year << endl;
         glutPostRedisplay();
     }
 
