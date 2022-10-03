@@ -5,12 +5,6 @@
 
 using namespace std;
 
-vector<float> positions_q = { 80.0f, 80.0f, 80.0f, 80.0f, 80.0f, 80.0f };
-
-vector<int> going_up = { 1, 0, 0, 0, 0, 0 };
-
-float square_size = 62.0f;
-
 bool is_paused = true;
 float year = 0.0;
 
