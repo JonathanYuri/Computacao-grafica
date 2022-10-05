@@ -20,19 +20,7 @@ all:
 	g++ Testes/casa.cpp -o casa.exe $(ARG)
 	g++ Testes/figura.cpp -o figura.exe $(ARG)
 
-ola:
-	g++ Listas/ola.cpp -o ola.exe $(ARG)
-	./ola.exe
-
-flor:
-	g++ Listas/Flor-de-abril.cpp -o flor.exe $(ARG)
-	./flor.exe
-
-sistema-solar:
-	g++ Listas/sistema-solar/sistema-solar.cpp -o sistema-solar.exe $(ARG)
-	./sistema-solar.exe
-
 clean:
-	@echo "clean project"
+	@echo cleaning...
 	-$(RM) *.exe
-	@echo "clean completed"
+	@echo clean completed
