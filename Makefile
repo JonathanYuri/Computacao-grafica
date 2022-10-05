@@ -17,6 +17,9 @@ all:
 	g++ Listas/Flor-de-abril.cpp -o flor.exe $(ARG)
 	g++ Listas/sistema-solar/sistema-solar.cpp -o sistema-solar.exe $(ARG)
 
+	g++ Testes/casa.cpp -o casa.exe $(ARG)
+	g++ Testes/figura.cpp -o figura.exe $(ARG)
+
 ola:
 	g++ Listas/ola.cpp -o ola.exe $(ARG)
 	./ola.exe

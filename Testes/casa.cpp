@@ -1,5 +1,4 @@
 // NAO TA FUNCIONANDO PQ TA CORTANDO, PQ O CUBO SAI DA CAMERA NO Z
-// 	g++ Testes/casa.cpp -o casa -I"freeglut\include" -L"freeglut\lib" -lfreeglut -lopengl32
 
 #include <iostream>
 #include <vector>

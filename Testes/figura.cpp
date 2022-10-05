@@ -1,5 +1,3 @@
-// 	g++ Testes/figura.cpp -o figura -I"freeglut\include" -L"freeglut\lib" -lfreeglut -lopengl32
-
 #include <iostream>
 #include <vector>
 #include <GL/glut.h>
